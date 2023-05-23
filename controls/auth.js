@@ -42,6 +42,18 @@ const login = async (req, res) => {
 
         const success = await bcrypt.compare(password, users[0].hashedPassword);
 
-        
+        if(success) {
+            res.status(200).json({ token, fullName: users[0].fullName, username, userId: users[0].id});
+        } 
+        else {
+            res.status(500).json({ message: 'Incorrect Password' })
+        }
     }
-}
+    catch (error) {
+        console.log(error)
+
+        res.status(500).json({ message: error })
+    }
+};
+
+module.exports = { signup, login }
