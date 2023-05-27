@@ -100,8 +100,21 @@ const Auth = () => {
                             onChange={handleChange} required
                             />
                         </div>
-                        
+                        {isSignup && (
+                            <div className="auth__form-container_fields-content_input">
+                                <label htmlFor='confirmPassword'>Confirm Password</label>
+                                <input name='confirmPassword' type='password'
+                                placeholder='Confirm Password'
+                                onChange={handleChange}
+                                required
+                                />
+                            </div>
+                        )}
+                        <div className="auth__form-container_fields-content_button">
+                            <button>{isSignup ? "Sign Up" : "Sign In"}</button>
+                        </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
