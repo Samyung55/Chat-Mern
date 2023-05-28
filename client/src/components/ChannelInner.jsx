@@ -94,3 +94,5 @@ const TeamChannelHeader = ({ setIsEditing }) => {
         </div>
     )
 }
+
+export default ChannelInner;
