@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useChatContext } from 'stream-chat-react';
 
-import { UserList } from './';
+import { UserList } from './Index';
 import { CloseCreateChannel } from '../assets/index';
 
 const ChannelNameInput = ({ channelName = '', setChannelName }) => {
@@ -57,3 +57,5 @@ const EditChannel = ({ setIsEditing }) => {
         </div>
     )
 }
+
+export default EditChannel
