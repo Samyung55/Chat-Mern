@@ -42,3 +42,18 @@ const EditChannel = ({ setIsEditing }) => {
         setIsEditing(false);
         setSelectedUsers([]);
     }
+
+    return (
+        <div className="edit-channel__container">
+            <div className="edit-channel__header">
+                <p>Edit Channel</p>
+                <CloseCreateChannel setIsEditing={setIsEditing} />
+            </div>
+            <ChannelNameInput channelName={channelName} setChannelName={setChannelName} />
+            <UserList setSelectedUsers={setSelectedUsers} />
+            <div className="edit-channel__button-wrapper" onClick={updateChannel}>
+                <p>Save Changes</p>
+            </div>
+        </div>
+    )
+}
