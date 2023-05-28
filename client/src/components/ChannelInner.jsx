@@ -3,3 +3,5 @@ import { MessageList, MessageInput, Thread, Window, useChannelActionContext, Ava
 
 import { ChannelInfo } from '../assets/ChannelInfo';
 
+export const GiphyContext = React.createContext({});
+
