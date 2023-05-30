@@ -106,3 +106,7 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
         </>
     )
 } 
+
+const ChannelListContainer = ({ setCreateType, setIsCreating, setIsEditing }) => {
+    const [toggleContainer, setToggleContainer] = useState(false)
+}
