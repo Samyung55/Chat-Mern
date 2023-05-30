@@ -91,7 +91,17 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
                         setCreateType={setCreateType} setIsEditing={setIsEditing}
                         setToggleContainer={setToggleContainer}
                     />
+                    )}
+                    Preview={(previewProps) => (
+                    <TeamChannelPreview 
+                        {...previewProps}
+                        setIsCreating={setIsCreating}
+                        setIsEditing={setIsEditing}
+                        setToggleContainer={setToggleContainer}
+                        type="messaging"
+                    />
                 )}
+            />
         </div>
         </>
     )
