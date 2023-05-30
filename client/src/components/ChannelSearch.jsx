@@ -31,6 +31,27 @@ const ChannelSearch = ({ setToggleContainer }) => {
             })
 
             const [channels, { users }] = await Promise.all([channelResponse, userResponse]);
+
+            if(channels.length) setTeamChannels(channels);
+            if(users.length) setDirectChannels(users);
+        }
+        catch (error) {
+            setQuery('')
         }
     }
+
+    const onSearch = (event) => {
+        event.preventDefault();
+
+        setLoading(true);
+        setQuery(event.target.value);
+        getChannels(event.target.value);
+    }
+
+    const setChannel = (channel) => {
+        setQuery('')
+        setActiveChannel(channel);
+    }
+
+    
 }
