@@ -130,3 +130,5 @@ const ChannelListContainer = ({ setCreateType, setIsCreating, setIsEditing }) =>
         </>
     )
 }
+
+export default ChannelListContainer;
