@@ -53,5 +53,31 @@ const ChannelSearch = ({ setToggleContainer }) => {
         setActiveChannel(channel);
     }
 
-    
+    return (
+        <div className="channel-search__container">
+            <div className="channel-search__input__wrapper">
+                <div className="channel-search__input_icon">
+                    <SearchIcon />
+                </div>
+                <input className='channel-search__input__text'
+                placeholder='Search' type='text' value={query}
+                onChange={onSearch}
+                />
+            </div>
+            {
+                query && (
+                    <ResultsDropdown
+                    teamChannels={teamChannels}
+                    directChannels={directChannels}
+                    loading={loading}
+                    setChannel={setChannel}
+                    setQuery={setQuery}
+                    setToggleContainer={setToggleContainer}
+                    />
+                )
+            }
+        </div>
+    )
 }
+
+export default ChannelSearch;
