@@ -109,4 +109,14 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
 
 const ChannelListContainer = ({ setCreateType, setIsCreating, setIsEditing }) => {
     const [toggleContainer, setToggleContainer] = useState(false)
+
+    return (
+        <>
+        <div className="channel-list__container">
+            <ChannelListContent setIsCreating={setIsCreating}
+            setCreateType={setCreateType} setIsEditing={setIsEditing}
+            />
+        </div>
+        </>
+    )
 }
