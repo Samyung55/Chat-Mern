@@ -25,3 +25,22 @@ const channelByUser = async ({
     return setActiveChannel(newChannel);
 };
 
+const SearchResult = ({ channel, focusedId, type, setChannel, setToggleContainer }) => {
+    const { client, setActiveChannel } = useChatContext();
+
+    if (type === 'channel') {
+        return (
+            <div onClick={() => {
+                if(setToggleContainer) {
+                    setToggleContainer((prevState) => !prevState)
+                }
+            }}
+            className={focusedId === channel.id ? 'channel-search__result-container__focused' : 'channel-search__result-container' }>
+                <div className="result-hashtag">#</div>
+                <p className="channel-search__result-text">{channel.data.name}</p>
+            </div>
+        )
+    }
+
+    
+}
