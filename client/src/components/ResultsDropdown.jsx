@@ -42,5 +42,19 @@ const SearchResult = ({ channel, focusedId, type, setChannel, setToggleContainer
         )
     }
 
-    
+    return (
+        <div onClick={async () => {
+            channelByUser({ client, setActiveChannel, channel, setChannel })
+            if(setToggleContainer) {
+                setToggleContainer((prevState) => !prevState)   
+            }
+          }}
+          className={focusedId === channel.id ? 'channel-search__result-container__focused' : 'channel-search__result-container' }
+        >
+          <div className='channel-search__result-user'>
+            <Avatar image={channel.image || undefined} name={channel.name} size={24} />
+            <p className='channel-search__result-text'>{channel.name}</p>
+          </div>
+        </div>
+    )
 }
