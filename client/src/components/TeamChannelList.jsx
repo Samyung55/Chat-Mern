@@ -13,5 +13,15 @@ const TeamChannelList = ({ setToggleContainer, children, error = false, loading,
         ) : null
     }
 
+    if(loading) {
+        return (
+            <div className="team-channel-list">
+                <p className="team-channel-list__message loading">
+                    {type === 'team' ? 'Channels' : 'Message'} loading...
+                </p>
+            </div>
+        )
+    }
+
     
 }
