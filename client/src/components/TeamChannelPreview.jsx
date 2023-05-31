@@ -45,3 +45,5 @@ const TeamChannelPreview = ({ setActiveChannel, setIsCreating, setIsEditing, set
         </div>
     );
 }
+
+export default TeamChannelPreview
