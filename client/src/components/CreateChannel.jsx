@@ -5,5 +5,24 @@ import { UserList } from './Index';
 import { CloseCreateChannel } from '../assets';
 
 const ChannelNameInput = ({ channelName = '', setChannelName }) => {
+    const handleChange = (event) => {
+        event.preventDefault();
 
+        setChannelName(event.target.value);
+    }
+
+    return (
+        <div className="channel-name-input__wrapper">
+           <p>Name</p>
+           <input value={channelName} onChange={handleChange} placeholder='channel-name' />
+           <p>Add Members</p> 
+        </div>
+    )
+}
+
+const CreateChannel = ({ createType, setIsCreating }) => {
+    const { client, setActiveChannel } = useChatContext();
+
+    const [selectedUsers, setSelectedUsers] = useState([client.userID || ''])
+    const [channelName, setChannelName] = useState('')
 }
