@@ -59,3 +59,5 @@ const CreateChannel = ({ createType, setIsCreating }) => {
         </div>
     )
 }
+
+export default CreateChannel
