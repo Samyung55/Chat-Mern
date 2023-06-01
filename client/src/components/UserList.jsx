@@ -95,4 +95,19 @@ const UserList = ({ setSelectedUsers }) => {
             </ListContainer>
         )
     }
+
+    return (
+        <ListContainer>
+            {loading ? <div className="user-list__message">
+                Loading users...
+            </div> : (
+                users?.map((user, i) => (
+                    <UserItem index={i} key={user.id} 
+                    user={user} setSelectedUsers={setSelectedUsers} />
+                ))
+            )}
+        </ListContainer>
+    )
 }
+
+export default UserList;
