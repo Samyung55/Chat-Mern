@@ -50,7 +50,31 @@ const UserList = ({ setSelectedUsers }) => {
 
     useEffect(() => {
         const getUsers = async () => {
-            
+            if(loading) return;
+            setLoading(true);
+
+            try{
+                const response = await client.queryUsers(
+                    { id: { $ne: client.userID } },
+                    { id: 1 },
+                    { limit: 8 }
+                );
+
+                if(response.users.length) {
+                    setUsers(response.users);
+                }
+                else {
+                    setListEmpty(true);
+                }
+            }
+            catch (error) {
+                setError(true)
+            }
+            setLoading(false);
         }
-    })
+
+        if(client) getUsers()
+    }, []);
+
+    
 }
