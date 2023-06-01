@@ -76,5 +76,23 @@ const UserList = ({ setSelectedUsers }) => {
         if(client) getUsers()
     }, []);
 
-    
+    if(error) {
+        return (
+            <ListContainer>
+                <div className="user-list__mea">
+                    Error loading, please refresh and try again.
+                </div>
+            </ListContainer>
+        )
+    }
+
+    if(listEmpty) {
+        return (
+            <ListContainer>
+                <div className="user-list__message">
+                    No users found.
+                </div>
+            </ListContainer>
+        )
+    }
 }
