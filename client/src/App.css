@@ -1187,4 +1187,47 @@ outline: none;
     z-index: 3;
   }
 
+   
+  ul.str-chat__simple-reactions-list:hover {
+    border: 1px solid var(--primary-color);
+  }
+  
+  .str-chat__simple-reactions-list-item span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .str-chat__message-team-content ul {
+    margin-top: 4px;
+  }
+  
+  .emoji-mart-emoji-custom span {
+    height: 15px !important;
+    width: 15px !important;
+  }
+  
+  .str-chat__simple-reactions-list-item--last-number {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #2c2c30;
+  }
+  
+  .str-chat__message-attachment-actions-form {
+    margin: 0px;
+    padding: 10px 0;
+    border-top: none;
+    border-radius: 16px;
+  }
+  
+  .str-chat__message-attachment-actions-button--primary {
+    background: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  .str-chat__message-attachment-actions-button--default {
+    background: #fff;
+    cursor: pointer;
+  }
   
