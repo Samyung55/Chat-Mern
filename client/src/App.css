@@ -400,4 +400,115 @@ body {
     border-radius: 9999px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
   }
+
+  .channel-list__list__wrapper {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    width: 240px;
+  }
   
+  .icon1__inner {
+    font-family: Helvetica Neue, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .channel-list__sidebar__icon2 {
+    width: 44px;
+    height: 44px;
+    margin: 14px;
+    background: linear-gradient(
+        150.64deg,
+        rgba(0, 0, 0, 0.1) 12.73%,
+        rgba(0, 0, 0, 0) 89.32%
+      ),
+      #ffffff;
+    border-radius: 9999px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+  }
+  
+  .icon2__inner {
+    font-family: Helvetica Neue, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .channel-list__header {
+    padding-left: 16px;
+    height: 62px;
+  }
+  
+  .channel-list__header__text {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  
+  .channel-search__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #00000033;
+  }
+  
+  .channel-search__input__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    width: 95%;
+  }
+  
+  .channel-search__input__wrapper:focus-within {
+    border: 1px solid #fff;
+  }
+  
+  .channel-search__input__icon {
+    width: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .channel-search__input__text {
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.66);
+    white-space: nowrap;
+    width: 150px;
+  }
+  
+  .channel-search__results {
+    position: absolute;
+    height: fit-content;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #e9e9ea;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    z-index: 10;
+    left: 230px;
+    top: 16px;
+  }  
