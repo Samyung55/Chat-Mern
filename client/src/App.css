@@ -1105,3 +1105,86 @@ outline: none;
     margin-top: 4px;
   }
   
+  
+  .str-chat__message-team-author strong {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 120%;
+    color: #858688;
+    margin: 0;
+    margin-right: 8px;
+  }
+  
+  .str-chat__message-team-content--text {
+    border-left: none;
+  }
+  
+  .str-chat__message-team--received {
+    padding-left: 20px;
+  }
+  
+  .str-chat__message-replies-count-button {
+    z-index: 2;
+    display: flex;
+    /* justify-content: flex-end; */
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--primary-color);
+  }
+  
+  .str-chat__message-replies-count-button:focus {
+    outline: none;
+  }
+  
+  .str-chat__message-team-actions {
+    right: -3px;
+  }
+  
+  .str-chat__date-separator-date {
+    color: #858688;
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  .str-chat__avatar-image img.str-chat__avatar-image--loaded {
+    display: none;
+  }
+  
+  .str-chat__message-attachment {
+    margin-bottom: 0;
+  }
+  
+  .str-chat__message-attachment--image {
+    max-width: 375px;
+  }
+  
+  .str-chat__message-attachment-card--title {
+    color: var(--primary-color);
+  }
+  
+  .str-chat__message-team .str-chat__message-attachment-card {
+    border-radius: 16px;
+  }
+  
+  .str-chat__message-team .str-chat__message-attachment-card--content {
+    background: #fff;
+  }
+  
+  ul.str-chat__simple-reactions-list {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background: #ffffff;
+    border: 1px solid #e9e9ea;
+    box-sizing: border-box;
+    border-radius: 50vw;
+    padding: 6px 6px 4px 6px;
+    z-index: 3;
+  }
+
+  
