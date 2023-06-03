@@ -234,3 +234,112 @@ body {
       transition: unset;
     }
   }
+
+
+  .auth__form-container_fields-content_button button:hover {
+    background: #0066ff;
+  }
+  
+  .auth__form-container_fields-account {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    margin-top: 0.2rem;
+  }
+  
+  .auth__form-container_fields-account p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .auth__form-container_fields-account span {
+    color: #05245a;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .auth__form-container {
+      flex-direction: column-reverse;
+    }
+  
+    .auth__form-container_fields {
+      justify-content: flex-start;
+    }
+  
+    .auth__form-container_image {
+      height: 100px;
+      flex: none;
+      box-shadow: none;
+    }
+  
+    .auth__form-container_image img {
+      object-fit: cover;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .auth__form-container_fields {
+      padding: 2rem 0.5rem;
+    }
+  
+    .auth__form-container_fields-content_input input {
+      width: 95%;
+    }
+  
+    .auth__form-container_fields-content_input-password {
+      right: 3%;
+    }
+  }
+  
+  .app__wrapper {
+    display: flex;
+    flex: 1;
+    /* height: 800px; */
+    height: 100%;
+    /* border-radius: 16px; */
+    box-shadow: rgba(0, 0, 0, 0.33) 0px 1px 4px 0px;
+  }
+  
+  .str-chat-channel-list {
+    height: fit-content;
+    margin-bottom: 8px;
+  }
+  
+  .str-chat-channel {
+    height: 100%;
+  }
+  
+  .str-chat__load-more-button {
+    display: none;
+  }
+  
+  .str-chat__input-footer {
+    display: none;
+  }
+  
+  .str-chat__date-separator {
+    margin: 16px 24px;
+  }
+  
+  .str-chat__message-notification {
+    background: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .str-chat-channel-list.team {
+      position: unset;
+      left: unset;
+      top: unset;
+      z-index: unset;
+      min-height: unset;
+      overflow-y: unset;
+      box-shadow: unset;
+      transition: unset;
+    }
+  }
+
+  
