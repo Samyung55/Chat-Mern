@@ -1837,3 +1837,10 @@ outline: none;
     }
   }
   
+
+  @media screen and (max-width: 320px) {
+    .channel-list__sidebar {
+      display: none;
+    }
+  }
+  
